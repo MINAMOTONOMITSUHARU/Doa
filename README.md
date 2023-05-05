@@ -35,6 +35,8 @@ To use the Doa Forum Server, you can either use the provided client or write you
 
 To register a new user, call the `register(String username, String password)` method, passing in the desired username and password as parameters. If the registration is successful, the method will return a string "Registration successful". If the username is already taken, the method will return a string "Username already exists". If the password does not meet the server's password policies, the method will throw an exception with the message "Password does not meet policy requirements".
 
+The current password requirements are: At least eight characters are required and must include at least one uppercase letter, one lowercase letter, one special character and one number. This setting can be modified in code.
+
 ### Authenticating a User
 
 To authenticate a user, call the `authenticate(String username, String password)` method, passing in the user's username and password as parameters. If the authentication is successful, the method will return a string "You are authenticated, Welcome ". If the username or password is incorrect, the method will throw an exception with the message "Please enter correct username password".
